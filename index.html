@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/splide/themes/splide-sea-green.min.css">
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+    <script type="text/javascript" src="./js/splide/splide-extension-intersection.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Titillium+Web:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+</head>
+<body onscroll="scrollFuction()">
+    <div class="left-bar">
+        <div class="item-left-bar">
+            <image onclick="showMenu()" class="close-button" src="./image/icons/close.png" style="margin-left: auto;"/>
+        </div>
+        <div class="item-left-bar">
+            <b><p id="home-option" onclick="change(1);showMenu();" class="text-low-only hover-item" style="color:rgb(255, 255, 255);text-align: center;">Inicio</p></b>
+        </div>
+        <div class="item-left-bar">
+            <b><p id="history-option" onclick="change(2);showMenu();" class="text-low-only hover-item" style="color:rgb(255, 255, 255);text-align: center;">Nuestra Historia</p></b>
+        </div>
+        <div class="item-left-bar">
+            <b><p id="hosting-option" onclick="change(3);showMenu();" class="text-low-only hover-item" style="color:rgb(255, 255, 255);text-align: center;">Hospedaje</p></b>
+        </div>
+        <div class="item-left-bar">
+            <button onclick="change(4);showMenu();" class="botton" style="margin: auto;">Confirma Asistencia</button>
+        </div>
+    </div>
+    <div class="top-bar">
+        <div class="button-menu" style="margin: 0px; margin-left: 20px; display: none;">
+            <image onclick="showMenu()" class="hamburger-button" src="./image/icons/menu.png"/>
+        </div>
+        <div class="nav-bar">
+            <a id="home-option" onclick="change(1)" class="nav-item nav-selected">Inicio</a>
+            <a id="history-option" onclick="change(2)" class="nav-item">Nuestra Historia</a>
+            <a id="hosting-option" onclick="change(3)" class="nav-item">Hospedaje</a>
+        </div>
+        <div class="center-title-name" style="text-align: center;">
+            <h2 id="text-title" style="font-family: 'Dancing Script', cursive; font-size: calc(1.8rem + .9vw);"><b>América y Guillermo</b></h2>
+        </div>
+        <div class="remove-cell" style="text-align: right;">
+            <button onclick="change(4)" class="botton">Confirma Asistencia</button>
+        </div>
+    </div>
+    <home>
+        <div style="width: 100vw; height: 100vh; position: relative;">
+            <div class="background-black"></div>
+            <div class="principal"></div>
+            <div class="cooldown" style="text-align: center;">
+                <p><b>¡Faltan!</b></p>
+                <p class="time" id="time"></p>
+            </div>
+        </div>
+        <div class="content-data">
+            <div class="column flex-column-n flex-center">
+                <img class="hide-image image-efect" src="https://images.squarespace-cdn.com/content/v1/5eb28629a0c86869bb22865e/1588758071190-5R479RKNQ8TV32RWBXR0/Stocksy_comp_701173.jpg?format=750w">
+            </div>
+            <div class="column flex-column-n flex-center">
+                <p class="text-high text-center"><b>Ceremonia</b></p>
+                <p class="text-middle text-center">16:00</p>
+                <p class="text-low text-center">Parroquia Ntra Señora del Carmen, Calle Tercera Ote No. 511, Carmen Serdan, 33010 Delicias, Chih.</p>
+                <a class="text-low" href="https://goo.gl/maps/dW9uAWPxatccCqsz9" target="_blank">Mapa</a>
+            </div>
+        </div>
+        <div class="content-data reverse">
+            <div class="column flex-column-n flex-center">
+                <p class="text-high text-center"><b>Recepción</b></p>
+                <p class="text-middle text-center">21:00</p>
+                <p class="text-low text-center">Quinta De Santiago, Carretera Delicias - Las Virgenes Km 22, 33620 Delicias, Chih.</p>
+                <a class="text-low" href="https://goo.gl/maps/Yr6WFwdxxYyE2wPL9" target="_blank">Mapa</a>
+            </div>
+            <div class="column flex-column-n flex-center">
+                <img class="hide-image image-efect" src="https://images.squarespace-cdn.com/content/v1/5eb28629a0c86869bb22865e/1588758071190-5R479RKNQ8TV32RWBXR0/Stocksy_comp_701173.jpg?format=750w">
+            </div>
+        </div>
+        <div class="content-all">
+            <p style="font-size: calc(1.8rem + .9vw); font-style: oblique; text-align: center;"><b>«Y dijo: "Por eso, el hombre dejará a su padre y a su madre para unirse a su esposa, y los dos serán como una sola persona".» (Mt 19, 5)</b></p>
+        </div>
+        <div class="content-data-low">
+            <div class="column-middle">
+                <div class="divider"></div>
+            </div>
+            <div class="column flex-column-n flex-center">
+                <span style="font-size: 3.5vw;"><b>Ve cómo empezó todo</b></span>
+                <button onclick="change(2)" class="botton-black">Nuestra Historia</button>
+            </div>
+            <div class="column-middle">
+                <div class="divider"></div>
+            </div>
+        </div>
+        <div class="content-image">
+            <div class="background-black"></div>
+            <div class="imagen-juntos"></div>
+            <div class="imagen-data">
+                <p style="font-size: 3.5vw;"><b>¡Esperamos que puedas acompañarnos!</b></p>
+                <button class="botton">Confirma Asistencia</button>
+            </div>
+        </div>
+    </home>
+    <history>
+        <div style="width: 100vw; height: 100vh; position: relative;">
+            <div class="background-black"></div>
+            <div class="principal" style="background-image: url('https://images.squarespace-cdn.com/content/v1/5eb28629a0c86869bb22865e/1588758065779-6MMYGDBK7QAZZ2ZFEMQ7/Stocksy_comp_701174.jpg');"></div>
+            <div class="cooldown" style="text-align: center;">
+                <p class="time">Cómo empezó todo</p>
+            </div>
+        </div>
+        <div class="content-3-4">
+            <p class="text-middle" style="font-style: oblique;">"Agun texto de cita o dialogo va aqui este es el formato."</p>
+            <p class="text-low" style="font-style: oblique;">— Yo</p>
+        </div>
+        <div class="content-3-4" style="margin-left: 30%;">
+            <p class="text-middle" style="font-style: oblique;">"Agun texto de cita o dialogo va aqui este es el formato."</p>
+            <p class="text-low" style="font-style: oblique;">— Yo</p>
+        </div>
+        <div class="content-data">
+            <div class="column">
+                <img class="hide-image image-efect" src="https://images.squarespace-cdn.com/content/v1/5eb28629a0c86869bb22865e/1588758063871-BQ14DJLZX9RKTJVDKI1H/Stocksy_comp_701176.jpg">
+            </div>
+            <div class="column">
+                <p class="text-all text-large"><b>Soria y Antoine se conocieron en una salida con sus respectivos amigos a un bar de Phoenix. Después de que se llamaron la atención mutuamente en el bar y de que pasaron el resto de la noche descubriendo que tenían mucho en común, empezaron a salir. Dos años más tarde, somos mejores amigos, un amor verdadero y excelentes compañeros de vida. ¡Por fin estamos listos para hacerlo oficial!</b></p>
+            </div>
+        </div>
+        <div class="content-all">
+            <div id="image-slider" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="./image/1.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./image/2.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./image/3.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./image/4.jpg">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./image/5.jpg">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </history>
+    <hosting>
+        <div style="width: 100vw; height: 100vh; position: relative;">
+            <div class="background-black"></div>
+            <div class="principal" style="background-image: url('https://images.squarespace-cdn.com/content/v1/5eb28629a0c86869bb22865e/1588758068465-NKS63IKCK5DEBDOYOP3B/Stocksy_comp_701176.jpg');"></div>
+            <div class="cooldown" style="text-align: center;">
+                <p>Hospedaje</p>
+            </div>
+        </div>
+        <div class="content-all">
+            <p class="text-high" style="text-align: center;"><b>Recomendaciones de alojamiento</b></p>
+        </div>
+        <div class="content row">
+            <div class="column-3 flex-column-n flex-center">
+                <p class="text-min">Hotel</p>
+                <a class="text-min">The Elk Inn</a>
+                <p class="text-min">687 Raken Rd</p>
+                <p class="text-min">Flagstaff, AZ 86001</p>
+                <p class="text-min">(928) 555-0123</p>
+            </div>
+            <div class="column-3 flex-column-n flex-center">
+                <p class="text-min">Hotel</p>
+                <p class="text-min">The Elk Inn</p>
+                <p class="text-min">687 Raken Rd</p>
+                <p class="text-min">Flagstaff, AZ 86001</p>
+                <p class="text-min">(928) 555-0123</p>
+            </div>
+            <div class="column-3 flex-column-n flex-center">
+                <p class="text-min">Hotel</p>
+                <p class="text-min">The Elk Inn</p>
+                <p class="text-min">687 Raken Rd</p>
+                <p class="text-min">Flagstaff, AZ 86001</p>
+                <p class="text-min">(928) 555-0123</p>
+            </div>
+        </div>
+    </hosting>
+    <formulario>
+        <div style="width: 100vw; height: 100vh; position: relative;">
+            <div class="background-black"></div>
+            <div class="principal" style="background-image: url('https://images.squarespace-cdn.com/content/v1/5eb28629a0c86869bb22865e/1588758068465-NKS63IKCK5DEBDOYOP3B/Stocksy_comp_701176.jpg');"></div>
+            <div class="cooldown" style="text-align: center;">
+                <p>Confimación</p>
+            </div>
+        </div>
+        <script type="text/javascript">var submitted=false;</script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='';}"></iframe>
+        <br>
+        <div class="container">
+            <div class="row g-2 justify-content-center">
+                <div class="col-xl-6 col-lg-7 col-md-9 col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 style="text-align: center;"><b>Favor de llenar el siguiente formulario</b></h1>
+                            <form class="form" action="https://docs.google.com/forms/d/e/1FAIpQLSddbzAfZAo9u8RTljKAnj_AXucffKxLWReTuNAP1mctvuXgyQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                                <div class="mb-3">
+                                    <label class="form-label">Nombre completo*</label>
+                                    <input class="form-control" name="entry.282640585" type="text"/>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="true" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            ¿Podras acompañarnos?*
+                                        </label>
+                                        <input hidden id="check-name" name="entry.381832899" type="text" value="No">
+                                    </div>
+                                </div>
+                                <div id="input-inv" class="mb-3">
+                                </div>
+                                <div id="cka" class="mb-3">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" placeholder="Email">Numero de celular o teléfono*</label>
+                                    <input class="form-control phone-format" name="entry.1591446969" type="tel" required pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}" />
+                                </div>
+                                <input type="submit" class="btn btn-secondary" value="Enviar" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </formulario>
+</body>
+</html>
