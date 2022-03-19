@@ -1,4 +1,11 @@
 window.onload = function() {
+    const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if(isDarkMode) {
+        $("#fav").attr("href","./image/icons/favicon-dark.png");
+    } else {
+        $("#fav").attr("href","./image/icons/favicon.png");
+    }
+    console.log($("#fav"));
     updateDate();
     change(1);
     
