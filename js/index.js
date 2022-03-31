@@ -114,18 +114,24 @@ function change(index) {
     $("#home-option").removeClass("nav-selected");
     $("#hosting-option").removeClass("nav-selected");
     $("#history-option").removeClass("nav-selected");
+    $("#home-option-1").removeClass("nav-selected");
+    $("#hosting-option-1").removeClass("nav-selected");
+    $("#history-option-1").removeClass("nav-selected");
     switch (index) {
         case 1:
             $("home").show();
             $("#home-option").addClass("nav-selected");
+            $("#home-option-1").addClass("nav-selected");
             break;
         case 2:
             $("history").show();
             $("#history-option").addClass("nav-selected");
+            $("#history-option-1").addClass("nav-selected");
             break;
         case 3:
             $("hosting").show();
             $("#hosting-option").addClass("nav-selected");
+            $("#hosting-option-1").addClass("nav-selected");
             break;
         case 4:
             $("formulario").show();

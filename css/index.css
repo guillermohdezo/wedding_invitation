@@ -156,7 +156,7 @@ input, button, submit { border:none; }
     height: 100vh;
     position: absolute;
     top: 0px;
-    background-image: url("https://images.squarespace-cdn.com/content/v1/5eb28629a0c86869bb22865e/1588758072422-N81BMSQBDJYFHTPMUR41/Stocksy_comp_701172.jpg");
+    background-image: url("../image/background/fondo1.JPG");
     opacity: .6;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -178,6 +178,7 @@ input, button, submit { border:none; }
     display: flex;
     flex-direction: row;
     max-height: 55vw;
+    min-height: 600px;
 }
 
 .content-data-low {
@@ -208,7 +209,7 @@ input, button, submit { border:none; }
 .text-all {
     margin: 7% 17%;
     letter-spacing: 3px;
-    line-height: 5vh;
+    line-height: 4.5vh;
 }
 
 .column-middle {
@@ -298,7 +299,7 @@ input, button, submit { border:none; }
     height: 100%;
     position: absolute;
     opacity: .7;
-    background-image: url("https://images.squarespace-cdn.com/content/v1/5eb28629a0c86869bb22865e/1588758068909-RR4BML8QT6CXNQSF0MIP/Stocksy_comp_701178.jpg");
+    background-image: url("../image/lateral/back.JPG");
 }
 
 .imagen-data {
@@ -402,11 +403,11 @@ input, button, submit { border:none; }
         display: block !important;
     }
     .text-large {
-        font-size: 1.5vw;
+        font-size: 2vw;
         color:rgba(0, 0, 0, 1);
     }
     .text-all {
-        line-height: 30px;
+        line-height: 26px;
     }
 }
 
@@ -422,6 +423,9 @@ input, button, submit { border:none; }
         font-size: 1.3rem !important;
         font-weight: bold !important;
     }
+    .text-all {
+        line-height: 24px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -435,6 +439,9 @@ input, button, submit { border:none; }
     .text-low {
         font-size: 1rem !important;
         font-weight: bold !important;
+    }
+    .text-all {
+        line-height: 23px;
     }
 }
 
