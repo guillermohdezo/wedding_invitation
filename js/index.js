@@ -11,20 +11,20 @@ window.onload = function () {
   updateDate();
   change(1);
 
-  var splide = new Splide(".splide", {
-    type: "loop",
-    perPage: 1,
-    autoWidth: true,
-    speed: 1000,
-    padding: "0",
-    focus: "center",
-    intersection: {
-      inView: {
-        autoplay: true,
-      },
-    },
-  });
-  splide.mount(window.splide.Extensions);
+  //var splide = new Splide(".splide", {
+  //  type: "loop",
+  //  perPage: 1,
+  //  autoWidth: true,
+  //  speed: 1000,
+  //  padding: "0",
+  //  focus: "center",
+  //  intersection: {
+  //    inView: {
+  //      autoplay: true,
+  //    },
+  //  },
+  //});
+  //splide.mount(window.splide.Extensions);
 
   //"https://docs.google.com/forms/d/e/1FAIpQLSddbzAfZAo9u8RTljKAnj_AXucffKxLWReTuNAP1mctvuXgyQ/viewform?usp=pp_url&entry.282640585=Guillermo&entry.381832899=Si&entry.1096580569=2&entry.1040855414=asd&entry.480214021=asd&entry.1193354740=asd&entry.1837214942=asd&entry.59183408=asd&entry.1554463775=asd&entry.1591446969=asd";
   $("body").scroll(function () {
@@ -58,8 +58,8 @@ window.onload = function () {
       localStorage.getItem("code") != code
     )
       localStorage.setItem("code", code);
+    showForm(code.replace("#", ""));
   }
-  showForm(code.replace("#", ""));
 };
 var icacdn = {
   XtSlPi: [3, 0],
